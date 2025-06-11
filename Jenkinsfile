@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Android Project') {
             steps {
                 dir('app') {
-                    git url: "${ANDROID_PROJECT_URL}"
+                    git url: "${SCM_PATH}"
                 }
             }
         }
